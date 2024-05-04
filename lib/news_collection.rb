@@ -42,6 +42,19 @@ class NewsCollection
     end
   end
 
+  # Prints the news to stdout in a readable format
+  def pretty_print_news
+    @news.each do |new_entry|
+      p '---'
+      p "Title: #{new_entry.title}"
+      p "N Order: #{new_entry.n_order}"
+      p "N Comments: #{new_entry.n_comments}"
+      p "Points: #{new_entry.points}"
+    end
+
+    p '---'
+  end
+
   private
 
   # Returns a new instance, it allows to set modified news
