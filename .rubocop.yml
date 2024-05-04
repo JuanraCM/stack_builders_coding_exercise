@@ -2,4 +2,5 @@ AllCops:
   NewCops: enable
   Include:
     - 'lib/*.rb'
+    - 'spec/lib/*.rb'
     - 'Gemfile'

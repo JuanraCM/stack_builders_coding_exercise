@@ -7,3 +7,6 @@ gem 'nokogiri'
 
 # Linter & code formatter
 gem 'rubocop', require: false
+
+# Testing library
+gem 'rspec'
