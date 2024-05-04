@@ -1,6 +1,10 @@
 AllCops:
+  SuggestExtensions: false
   NewCops: enable
   Include:
     - 'lib/*.rb'
     - 'spec/lib/*.rb'
     - 'Gemfile'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/lib/*.rb'

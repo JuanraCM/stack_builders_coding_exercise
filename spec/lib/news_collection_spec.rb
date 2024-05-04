@@ -89,7 +89,7 @@ RSpec.describe NewsCollection do
 
   describe '#pretty_print_news' do
     it 'prints the news in the correct format' do
-      expected_output = <<~EOS
+      expected_output = <<~TEXT
         "---"
         "Title: Foo Bar Baz"
         "N Order: 1"
@@ -111,7 +111,7 @@ RSpec.describe NewsCollection do
         "N Comments: 5"
         "Points: "
         "---"
-      EOS
+      TEXT
 
       expect { subject.pretty_print_news }.to output(expected_output).to_stdout
     end
