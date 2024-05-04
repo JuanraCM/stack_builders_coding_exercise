@@ -5,6 +5,8 @@ AllCops:
     - 'lib/*.rb'
     - 'spec/lib/*.rb'
     - 'Gemfile'
+  Exclude:
+    - 'bin/*'
 Metrics/BlockLength:
   Exclude:
     - 'spec/lib/*.rb'
