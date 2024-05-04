@@ -16,4 +16,11 @@ class NewsEntry
     @n_comments = n_comments
     @points     = points
   end
+
+  # Memoizes and returns the title word count
+  #
+  # @returns [Integer]
+  def title_word_count
+    @title_word_count ||= title.split.count
+  end
 end
